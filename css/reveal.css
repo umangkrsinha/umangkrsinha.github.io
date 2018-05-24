@@ -1553,3 +1553,12 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+#redColor {
+
+	color: red;
+}
+#IITMadras {
+
+  color: #b8f1b0;
+}
