@@ -1562,3 +1562,29 @@ body {
 
   color: #b8f1b0;
 }
+#electrical_engineering{
+
+  color: white;
+}
+#webdev{
+
+  color: red;
+}
+#IoT{
+
+  color: yellow;
+}
+#dataScience{
+
+  color: green;
+}
+
+#webdevImageId {
+  width: 2300px;
+  height: 1679px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url(../images/EEImage.jpg);
+  }

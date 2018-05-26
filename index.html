@@ -27,22 +27,49 @@
 				<section>
 					<section>
 						Hello everyone! <br />
-						<p class="fragment">I'm<br />
+						<p class="fragment" id="first">I'm<br />
 						Umang Kumar Sinha</p>
 						<p class="fragment">from <br />
 						Indian Institute of Technology
 						<span class="fragment" id="redColor">Madras</span>
 					</p>
 				</section>
-				<section data-background-iframe="https://www.google.com/maps/embed?pb=!1
-				m10!1m8!1m3!1d12998.972510853539!2d80.228919!3d13.001044!3m2!1i1024!2i76
-				8!4f13.1!5e1!3m2!1sen!2sin!4v1527194002138" data-background-interactive>
+				<section data-background-transition="slide" data-background-iframe="http
+				s://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12998.972510853539!2d80
+				.228919!3d13.001044!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v15271940
+				02138" data-background-interactive>
 					<h2 id="IITMadras">IIT Madras</h2>
 				</section>
 				</section>
-				<section>
-					Slide 2
+				<section data-background-image="images/EEGif2.gif" data-background-transition="zoom">
+					<h3 id="electrical_engineering">I study <p class="fragment">Electrical Engineering (B.Tech)</p>
+					<p class="fragment">and <br />
+						Data Science (M.Tech)
+					</p></h3>
 				</section>
+				<section id="interests">
+					My primary interests are: <br />
+					<p class="fragment" id="webdev">Web Development</p>
+					<p class="fragment" id="IoT">Internet of Things</p>
+					<p class="fragment" id="dataScience">Data Science</p>
+				</section>
+				<section>
+					Projects
+				</section>
+				<section>
+					Hackathon
+				</section>
+				<section>
+					How I developed my interest in AI and converted my program at college to Data Science (M.Tech)
+				</section>
+				<section>
+					With all this background Mercari seemed to be the perfect place for me to be
+				</section>
+				<section>
+					This is my first visit to Japan, thanks mercari for this opportunity to learn more about
+					interesting things like web dev, iot and data science
+				</section>
+
 			</div>
 		</div>
 
@@ -59,9 +86,16 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+				transition: "convex"
 			});
-			Reveal.configure({ transition: "convex" });
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+				if(event.fragment.id=="webdev") {
+					console.log("webdev fragment was shown!");
+					//document.getElementById("interests").id="webdevImageId";
+					//console.log(document.getElementById("webdevImageId"));
+				}
+			} );
 
 		</script>
 	</body>
