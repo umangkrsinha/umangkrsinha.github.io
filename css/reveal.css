@@ -1588,3 +1588,7 @@ body {
   bottom: 0%;
   background-image: url(../images/EEImage.jpg);
   }
+
+.listElement {
+  font-size: 0.25em;
+}

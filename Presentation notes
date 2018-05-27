@@ -1,0 +1,56 @@
+Web Development:
+  Shaastra is the annual technical festival of IIT Madras, it is a completely student run ISO certified
+  festival. The Shaastra website is responsible for coordinating the different events, displaying the different
+  events to people who might be interested, displaying the sponsor companies' advertisements, enrolling
+  people from all over India into the events and managing their payments.
+
+  Shaastra summer camp 2016:
+    It was in Shaastra 2016 summer camp when I was introduced to web deveopment. The camp was organized by
+    our seniors who were Shaastra webops cores and coordinators. The camp introduced us to the fundamentals of
+    web deveopment like how a website works, what is front-end and what is back-end, what is the difference
+    between the two, what is a server, what is a database and how all of these things work together to make a
+    website work. We were also introduced to a little bit of web dev oriented coding html, css, bootstrap,
+    nodejs and MEANstack because 2016 website and all the Shaastra website after this one were based to
+    MEANstack framework. Later on I applied for Shaastra webops backend coordinator for Shaastra 2017 as that
+    seems more interesting to me.
+
+  Shaastra 2017 coordinator:
+    I was selected as one of the Shaastra 2017 backend coordinators. I learnt more about a website's Backend
+    as now I had to work with the entire/full backend of our website and coordinate with other members of the
+    team. The tasks given to me were, testing and debugging the events portal of Shaastra 2017 (a part of our
+    website). So, basically as I was new I had to sit and try my best to make the portal crash or do something
+    weird which it was not supposed to do and then was asked to try to fix that issue. Later on in 2017 I was
+    given a project where I had to build a portal for Shaastra Solutions (which is another sub branch of Shaastra).
+    As I was doing a project under a professor where I had to use Django to make a server which runs an algorithm,
+    I made the Solutions Portal using Django from scratch. Shaastra usually uses generators like Yeoman to make
+    their websites so building a portal from ground up taught me a lot of other things. Things that we used to take
+    from granted were not there anymore and I had to do everything on my own.
+
+  Shaastra 2018 super-coordinator:
+    I enjoyed working for Shaastra so I applied for the position of super-coordinator for Shaastra 2018
+    and got in. Now I had to lead a team of backend coordinators. I incorporated better security measures
+    in our website, incorporated a payment portal (Insta mojo) and was responsible to make the backend more
+    efficient than the previous one.[Ex. Suppose there is a team event, if an application for a team is submitted
+    we need to verify for all the members that team if he/she is not participating in the same from some other team.
+    So earlier we had to loop over all the members of the team then loop over all teams in the event and search if
+    the person had applied from some other team. Now we have a list in the database of the person which tells what
+    all events he is applying for and also what team he is applying from. So now searching verifying the thing is easier
+    and faster]. I enjoyed the Shaastra webops experience very much.
+
+Internet of Things:
+  Traffic Monitoring:
+    In 2017 I was involved in a project under a professor where we had to use microprocessors to monitor traffic
+    in our institute. Basically a microprocessor would scan for bluetooth devices around it using its bluetooth
+    module for a specified amount of time and then it would send that information to a server which was hosted on
+    pythonanywhere.com. I was responsible to make the server which had to run an algorithm. The algorithm was basically
+    the djikstra's algorithm and it was used to find and suggest the shortest paths to a destination to the driver.
+  Flipkart Gridlock Hackathon:
+    I participated in the Flipkart's Gridlock Hackathon. The problem statement was that we had to come up with an
+    innovative way to tackle Bengaluru's (Bengaluru is a city in South India) traffic problem. Our idea was to
+    make the traffic lights "smart" by giving them the ability to know their surroundings (junctions) and then
+    they can decide the most optimal traffic light phase. :Explain arrangement:. I was responsible to get the
+    django server to work on the microprocessor and wrote a scipt code which was responsible to connect the
+    devices to each other using the server device's hotspot.
+
+Data-Science:
+  CNA stuff and converted to M.Tech in data science.

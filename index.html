@@ -47,27 +47,59 @@
 						Data Science (M.Tech)
 					</p></h3>
 				</section>
-				<section id="interests">
-					My primary interests are: <br />
-					<p class="fragment" id="webdev">Web Development</p>
-					<p class="fragment" id="IoT">Internet of Things</p>
-					<p class="fragment" id="dataScience">Data Science</p>
-				</section>
 				<section>
-					Projects
+					<section id="interests">
+						<p>My Primary interests are:</p>
+						<p class="fragment" id="webdev">Web Development</p>
+						<span class="fragment" id="showWebDevProjects"></span>
+						<p class="fragment" id="IoT">Internet of Things</p>
+						<span class="fragment" id="showIotProject"></span>
+						<p class="fragment" id="dataScience">Data Science</p>
+					</section>
+					<section>
+						<h3>Experiences and Projects:</h3>
+						<p class="fragment">Shaastra Summer Camp 2016</p>
+						<aside class="notes">
+							Only us notes here!
+						</aside>
+						<p class="fragment">Shaastra 2017 Backend Coordinator</p>
+							<ul>
+								<li class="fragment">Not a mini project anymore!</li>
+								<li class="fragment">Testing and debugging the Shaastra Events portal</li>
+								<li class="fragment">Shaastra Solutions portal in Django</li>
+							</ul>
+							<p class="fragment">Shaastra 2018 Backend Super-Coordintor</p>
+								<ul>
+									<li class="fragment">Guide the team of backend coordinators</li>
+									<li class="fragment">Incorporated a payment portal (instamojo) into the website</li>
+									<li class="fragment">Increased the efficiency of the backend</li>
+									<li class="fragment">Incorporated better security measures</li>
+								</ul>
+						<span class="fragment" id="goBackTowebDevProjects"></span>
+					</section>
+					<section data-transition="zoom">
+						<h3>Experiences and Projects:</h3>
+						<h4 class="fragment">Traffic Monitoring</h4>
+						<ul>
+							<li class="fragment"><span class="listElement">Project under a professor</span></li>
+							<li class="fragment">Monitor the vehicular traffic in our institute</li>
+							<li class="fragment">Responsible for the server on pythonanywhere.com</li>
+						</ul>
+						<h4 class="fragment">Flipkart Gridlock Hackathon</h4>
+							<ul>
+								<li class="fragment"><span class="listElement">Continuation of the Traffic Monitoring Project</span></li>
+								<li class="fragment">Backpressure based algorithm</li>
+								<li class="fragment">Server on a microprocessor</li>
+								<li class="fragment">Ended up in 4th place</li>
+							</ul>
+						<span class="fragment" id="goBackToIotProjects"></span>
+					</section>
 				</section>
-				<section>
-					Hackathon
+				<section data-transition="convex">
+					DS things here!
 				</section>
-				<section>
-					How I developed my interest in AI and converted my program at college to Data Science (M.Tech)
-				</section>
-				<section>
-					With all this background Mercari seemed to be the perfect place for me to be
-				</section>
-				<section>
-					This is my first visit to Japan, thanks mercari for this opportunity to learn more about
-					interesting things like web dev, iot and data science
+				<section data-background-image="images/thatsAllFolks.gif" data-background-transition="zoom">
+					Thank you!
 				</section>
 
 			</div>
@@ -80,6 +112,7 @@
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
+			var state = '';
 			Reveal.initialize({
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
@@ -89,11 +122,32 @@
 				],
 				transition: "convex"
 			});
+			Reveal.configure({ slideNumber: true });
+			Reveal.configure({ showSlideNumber: "all" });
 			Reveal.addEventListener( 'fragmentshown', function( event ) {
-				if(event.fragment.id=="webdev") {
-					console.log("webdev fragment was shown!");
-					//document.getElementById("interests").id="webdevImageId";
-					//console.log(document.getElementById("webdevImageId"));
+				id = event.fragment.id
+				if(id == "showWebDevProjects") {
+					state = Reveal.getState();
+					Reveal.slide( 2, 1 );
+				}
+				if(id == "showIotProject") {
+					state = Reveal.getState();
+					Reveal.slide( 2, 2 );
+				}
+				if(id == "showDataScienceInfo") {
+					state = Reveal.getState();
+					Reveal.slide( 2, 3 );
+				}
+				if (id == "goBackTowebDevProjects"){
+					Reveal.setState(state);
+					document.getElementById("interests").setAttributef("data-background-image", null);
+				}
+				if(id == "goBackToIotProjects"){
+					Reveal.setState(state);
+				}
+				if(id=="webdev") {
+					//document.getElementById("interests").setAttribute("data-background-image", "images/EEImage.jpg");
+					Reveal.sync()
 				}
 			} );
 
