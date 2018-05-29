@@ -1572,7 +1572,7 @@ body {
 }
 #IoT{
 
-  color: yellow;
+  color: blue;
 }
 #dataScience{
 
@@ -1591,4 +1591,12 @@ body {
 
 .listElement {
   font-size: 0.25em;
+}
+#guitar {
+
+  font-size: 0.5em;
+}
+
+li.zeroPointFiveEm {
+  font-size: 0.5em;
 }
